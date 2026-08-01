@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com
+type: Components
+provider: Real Gift Services
+description: >-
+  RealGifts ships drop-in, embeddable client-side commerce components that let a
+  platform add a gift shop, checkout, and wishlist that "look and feel like
+  yours." Components are white-labeled and delivered via a hosted browser SDK
+  loader, distinct from the server/mobile SDKs in packages/.
+loader:
+  library: https://www.getrealgifts.com/sdk/realgifts.js
+  init: "RealGifts.init({ api_key: 'YOUR_API_KEY', ... })"
+families:
+- name: Gift Shop / Storefront
+  kind: embedded-storefront
+  description: >-
+    Turnkey, white-labeled gift shop / reward store embedded into a host
+    platform, backed by a 1M+ gift catalog across hundreds of brands.
+  evidence: "\"Add a turnkey gift shop to your platform\" / white-label storefronts."
+- name: Send Gift Button
+  kind: button
+  description: >-
+    "Send a Gift" button that can be dropped anywhere and wired to
+    RealGifts.app.init(...) to launch the gifting flow.
+  evidence: |
+    <button onclick="RealGifts.app.init(...)">Send a Gift</button>
+- name: Widgets & Badges
+  kind: widget
+  description: >-
+    Drop-in widgets and badges that render natively inside the host platform on
+    mobile and desktop.
+  evidence: "\"Drop-in widgets, badges, and buttons that look and feel like yours. Mobile and desktop.\""
+- name: Checkout
+  kind: embedded-checkout
+  description: Frictionless white-label checkout ("no cart") embedded in the host flow.
+  evidence: "\"Frictionless checkout. No cart.\" / \"White-label everything from checkout to email.\""
+- name: Wishlist
+  kind: widget
+  description: Built-in wishlists that drive repeat visits and gift purchase rates.
+  evidence: "\"Built-in wishlists drive repeat visits and supercharge your gift purchase rates.\""
+notes: >-
+  Integration modes advertised: "Link, widget, or API." The demo references a
+  hosted gift store preview (yourplatform.com/gifts).

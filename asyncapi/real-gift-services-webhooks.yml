@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com/documentation
+type: Webhooks
+provider: Real Gift Services
+api: RealGifts API
+description: >-
+  RealGifts advertises webhooks as a core part of its programmatic surface
+  ("REST API, webhooks, and SDKs for complete programmatic control"). The public
+  developer pages confirm webhooks exist and support real-time order tracking,
+  but the concrete event catalog and payload schemas live in the gated
+  documentation portal and are not published on the marketing surface. This
+  catalog records the confirmed webhook surface plus the lifecycle stages the
+  product exposes; individual event names are marked inferred where not verbatim.
+webhooks_supported: true
+delivery: HTTP callbacks (details in gated docs)
+lifecycle_signals:
+- stage: browse
+  description: User browses the 1M+ gift catalog.
+- stage: purchase
+  description: Frictionless checkout completes an order (order id format RG-XXXX-XXXXXX).
+- stage: redeem
+  description: Recipient claims the gift; recipient PII stays private.
+- stage: earn
+  description: Commission accrues to the platform per order; real-time commission statements.
+events:
+- id: order.created
+  status: inferred
+  description: Emitted when a gift order is placed. (Stage name confirmed; event id inferred.)
+- id: order.redeemed
+  status: inferred
+  description: Emitted when a recipient claims/redeems a gift. (Stage confirmed; event id inferred.)
+- id: commission.recorded
+  status: inferred
+  description: Emitted when commission is recorded against a platform order. (Stage confirmed; event id inferred.)
+notes: >-
+  "Live, real-time tracking" of orders is advertised. Event ids above are
+  inferred from the confirmed browse -> purchase -> redeem -> earn lifecycle and
+  should be replaced with verbatim names once the gated docs are accessible. No
+  AsyncAPI document is published.

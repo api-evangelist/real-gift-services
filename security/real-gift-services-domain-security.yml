@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.getrealgifts.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 25 16:14:06 2026 GMT
+  hsts: null
+domains:
+- domain: getrealgifts.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com/documentation
+type: Authentication
+provider: Real Gift Services
+api: RealGifts API
+docs: https://www.getrealgifts.com/documentation
+description: >-
+  RealGifts authenticates API and SDK calls with an API key. The public
+  developer snippet initializes the browser SDK with an API key
+  (RealGifts.init({ api_key: 'YOUR_API_KEY' })). No OAuth or OpenID Connect flow
+  is advertised on the public developer surface. The full auth reference lives in
+  the gated documentation portal.
+schemes:
+- id: api_key
+  type: apiKey
+  official: true
+  in: header
+  parameter: unknown
+  description: >-
+    API key issued to the integrating platform/vendor account. Passed to the
+    SDK via RealGifts.init({ api_key: '...' }) for browser integrations and used
+    to authenticate REST API and webhook requests. Header/parameter name and
+    key prefix are documented in the gated portal and not captured here.
+  evidence: >-
+    Homepage developer snippet — "Initialize with your API key" /
+    RealGifts.init({ api_key: 'YOUR_API_KEY' }).
+notes: >-
+  Vendor vs. standard account types exist (signup?account_type=vendor); scope of
+  key permissions per account type is not documented publicly.

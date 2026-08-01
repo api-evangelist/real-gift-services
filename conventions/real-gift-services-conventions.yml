@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com/documentation
+type: Conventions
+provider: Real Gift Services
+api: RealGifts API
+description: >-
+  Cross-cutting API semantics for the RealGifts platform, captured from the
+  public developer surface. The detailed reference is behind a gated docs
+  portal, so only publicly-stated conventions are recorded here; unknown fields
+  are marked rather than invented.
+conventions:
+  transport:
+    style: REST
+    formats:
+    - JSON
+    evidence: "\"Full REST API\" / \"REST API, webhooks, and SDKs for complete programmatic control\""
+  authentication:
+    style: api_key
+    detail: authentication/real-gift-services-authentication.yml
+  webhooks:
+    supported: true
+    detail: asyncapi/real-gift-services-webhooks.yml
+    evidence: "\"REST API, webhooks, and SDKs\""
+  identifiers:
+    order_id:
+      format: "RG-XXXX-XXXXXX"
+      examples:
+      - RG-A4F2-9C71KB
+      - RG-7K2A-3X9D4M
+      - RG-B91E-K4F8R2
+      note: >-
+        Human-visible order identifiers use an RG- prefix with two grouped
+        alphanumeric segments, seen on public commission-statement examples.
+  privacy:
+    recipient_pii: >-
+      Recipient personally identifiable information is kept private during
+      redemption ("Recipient claims — PII stays private").
+  internationalization:
+    multi_currency: true
+    international_shipping: true
+    localized_email: true
+    evidence: >-
+      "Multi-currency display, international shipping, and localized emails,
+      right out of the box."
+  idempotency:
+    documented: false
+    note: No idempotency-key convention is stated on the public developer surface.
+  pagination:
+    documented: false
+  rate_limiting:
+    documented: false
+  error_envelope:
+    documented: false
+    note: Error format not published on the public marketing/developer pages.

@@ -1,0 +1,68 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com/documentation
+type: Packages
+provider: Real Gift Services
+description: >-
+  First-party RealGifts SDKs advertised on the RealGifts developer surface. The
+  homepage and developer section state: "One snippet. SDKs for JavaScript,
+  Node.js, PHP, Python, Ruby, Perl, iOS, Android, and more. Full REST API."
+  Registry coordinates (npm/PyPI/Packagist/etc.) are not published on the public
+  marketing pages and the documentation portal is gated behind a bot challenge,
+  so package names are recorded as documented-but-unresolved rather than
+  invented. The browser SDK is loaded via a hosted script and initialized with
+  an API key (RealGifts.init({ api_key: 'YOUR_API_KEY' })).
+loader:
+  browser_snippet: |
+    <!-- Add the RealGifts SDK -->
+    <script src="https://www.getrealgifts.com/sdk/realgifts.js"></script>
+    <!-- Initialize with your API key -->
+    <script>
+      RealGifts.init({ api_key: 'YOUR_API_KEY', ... });
+    </script>
+packages:
+- language: JavaScript
+  kind: browser-sdk
+  official: true
+  loader: https://www.getrealgifts.com/sdk/realgifts.js
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: Node.js
+  kind: server-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: PHP
+  kind: server-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: Python
+  kind: server-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: Ruby
+  kind: server-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: Perl
+  kind: server-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: iOS
+  kind: mobile-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+- language: Android
+  kind: mobile-sdk
+  official: true
+  registry: unknown
+  source: https://www.getrealgifts.com/documentation
+notes: >-
+  "and more" plus "Custom SDKs" are advertised beyond the eight named languages.
+  Mark official:true because these are RealGifts-authored client libraries, not
+  third-party wrappers.

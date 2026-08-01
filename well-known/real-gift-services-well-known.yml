@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.getrealgifts.com/.well-known/
+type: WellKnown
+provider: Real Gift Services
+host: www.getrealgifts.com
+description: >-
+  Probe of RealGifts /.well-known/ endpoints. Only security.txt is served as a
+  static file (HTTP 200); the remaining well-known paths return HTTP 403 behind
+  the site's bot-challenge layer and are treated as not published.
+endpoints:
+- path: /.well-known/security.txt
+  status: 200
+  file: real-gift-services-security.txt
+  type: SecurityTxt
+- path: /.well-known/openid-configuration
+  status: 403
+  present: false
+- path: /.well-known/oauth-authorization-server
+  status: 403
+  present: false
+- path: /.well-known/api-catalog
+  status: 403
+  present: false
+- path: /.well-known/ai-plugin.json
+  status: 403
+  present: false
