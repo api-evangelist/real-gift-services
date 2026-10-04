@@ -86,7 +86,6 @@ apis:
     first-party SDKs across JavaScript, Node.js, PHP, Python, Ruby, Perl, iOS,
     and Android.
   humanURL: https://www.getrealgifts.com/documentation
-  baseURL: https://www.getrealgifts.com
   tags:
   - Gifting
   - Rewards
