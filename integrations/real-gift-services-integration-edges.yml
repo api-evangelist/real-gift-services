@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/real-gift-services/integrations
+- https://n8n.io/integrations/real-gift-services/
+- https://composio.dev/toolkits/real-gift-services
+- https://monid.ai/tools/real-gift-services
+checked:
+- https://composio.dev/toolkits/real-gift-services
+- https://monid.ai/tools/real-gift-services
+- https://n8n.io/integrations/real-gift-services/
+- https://zapier.com/apps/real-gift-services/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
