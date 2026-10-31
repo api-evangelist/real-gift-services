@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Real Gift Services is a company surfaced as a portfolio company of battery-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+RealGifts (Real Gift Services) is a Gifting-as-a-Service (GaaS) and G-Commerce platform, operating since 2008, that lets platforms and apps embed a turnkey gift shop, reward store, and wishlist experience in minutes. Its curated catalog spans more than one million gifts across hundreds of brands, sold through drop-in widgets, badges, and buttons or a full REST API with webhooks and SDKs for JavaScript, Node.js, PHP, Python, Ruby, Perl, iOS, and Android. Platforms integrate once, white-label the storefront, checkout, and email, and earn commissions on every order while RealGifts handles payments, shipping, redemption, multi-currency display, international delivery, and recipient-privacy-preserving gift claiming. RealGifts was an fbFund recipient, was built for the Facebook Gift Shop, and has been featured in TIME and Fast Company.
 
-Backed by: battery-ventures
+**Areas:** Company · Gifting · Gift Cards · Rewards · Loyalty · E-Commerce · Commerce · Embedded Commerce · SDK · Webhook
+
+## Real Gift Services on APIs.io
+
+Everything profiled for Real Gift Services is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/real-gift-services/](https://apis.io/providers/real-gift-services/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [RealGifts API](https://apis.io/apis/real-gift-services/realgifts-api/) — RealGifts full REST API for embedding a gift shop, reward store, and wishlist into a platform: browse a 1M+ gift catalog, create and send gifts, handle…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Real Gift Services Webhooks](https://apis.io/asyncapis/real-gift-services/real-gift-services-webhooks/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Real Gift Services Authentication](https://apis.io/security/real-gift-services/real-gift-services-authentication/)
+- [Real Gift Services Domain Security](https://apis.io/security/real-gift-services/real-gift-services-domain-security/)
+- [Real Gift Services Vulnerability Disclosure](https://apis.io/security/real-gift-services/real-gift-services-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.getrealgifts.com)
+- [Documentation](https://www.getrealgifts.com/documentation)
+- [API reference](https://www.getrealgifts.com/documentation)
+- [Pricing](https://www.getrealgifts.com/pricing)
+- [Sign up](https://www.getrealgifts.com/signup)
+- [Support](https://www.getrealgifts.com/contact)
+- [Terms of service](https://www.getrealgifts.com/terms)
+- [Privacy policy](https://www.getrealgifts.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 36.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 44.7 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.2** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/real-gift-services/](https://apis.io/providers/real-gift-services/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Real Gift Services: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/real-gift-services/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
